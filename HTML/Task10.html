@@ -1,0 +1,56 @@
+<!-- 
+1. Embade video on a webpage with the following:
+    - Add controls, autoplay, and poster image.
+    - Add subtitles using the <track> element.
+2. Create an audio palyer with two different audio formats.
+3. Embade a youtube video on a webpage using the <iframe> element.
+4. Create a table listing three common video and audio formats along with their descriptions. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 10 - Embadeing</title>
+</head>
+<body>
+    
+    <h2>Video</h2>
+    <video width="320" height="240" controls autoplay poster="https://www.w3schools.com/html/pic_trulli.jpg">
+        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+        <source src="https://www.w3schools.com/html/mov_bbb.ogg" type="video/ogg">
+        <track src="subtitles_en.vtt" kind="subtitles" srclang="en" label="English">
+    </video>
+
+    <h2>Audio</h2>
+    <audio controls>
+        <source src="horse.mp3" type="audio/mpeg">
+        <source src="horse.ogg" type="audio/ogg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <h2>Youtube Video</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/7lCDEYXw3mM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <h2>Table</h2>
+    <table border="1">
+        <tr>
+            <th>Format</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td>MP4</td>
+            <td>MPEG-4 Part 14 or MP4 is a digital multimedia container format most commonly used to store video and audio, but it can also be used to store other data such as subtitles and still images.</td>
+        </tr>
+        <tr>
+            <td>OGG</td>
+            <td>Ogg is a free, open container format maintained by the Xiph.Org Foundation. The creators of the Ogg format state that it is unrestricted by software patents and is designed to provide for efficient streaming and manipulation of high-quality digital multimedia.</td>
+        </tr>
+        <tr>
+            <td>MP3</td>
+            <td>MPEG-1 or MPEG-2 Audio Layer III, more commonly referred to as MP3, is an audio coding format for digital audio which uses a form of lossy data compression.</td>
+        </tr>
+    </table>
+
+</body>
+</html>
