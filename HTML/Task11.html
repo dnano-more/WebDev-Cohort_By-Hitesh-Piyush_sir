@@ -1,0 +1,44 @@
+<!-- 
+ 1. Create a form with the following feilds:
+    - Email (required)
+    - Date of birth (date picker)
+    - Favorite color (color picker)
+2. Draw a rectangle using the <canvas> element and JavaScript. 
+    -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 11</title>
+</head>
+<body>
+    
+    <form action="/submit" style="background-color: lightblue; padding: 20px; border: 1px solid black; width: 50%; margin: 0 auto;">
+        <label for="email">Email:</label>
+        <input type="email" name="" id="email" placeholder="add email here" required>
+        <br> <br>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" name="" id="dob">
+        <br> <br>
+
+        <label for="color">Favorite Color:</label>
+        <input type="color" name="" id="color">
+        <br> <br>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <canvas id="myCanvas" width="200" height="100" style="border:1px solid #000000;"></canvas>
+
+    <script>
+        var c = document.getElementById("myCanvas");
+        var ctx = c.getContext("2d");
+        ctx.rect(20, 20, 150, 100);
+        ctx.stroke();
+    </script>
+
+</body>
+</html>
