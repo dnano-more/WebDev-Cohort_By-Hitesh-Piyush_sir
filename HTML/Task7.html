@@ -1,0 +1,31 @@
+<!-- 
+1. Add a phone number field to the form that accepts only numbers.
+2. Include a textarea for additional comments in the form.
+3. Add validation to ensurethe password is at least 8 character long using the pattern attribute.
+4. Style the form to center it on the page, add background color, padding and border. 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 7 - Form</title>
+</head>
+<body>
+
+    <form action="/submit" style="background-color: lightblue; padding: 20px; border: 1px solid black; width: 50%; margin: 0 auto;">
+        <label for="number">Phone:</label>
+        <input type="tel" name="" id="number" placeholder="add number here" pattern="[0-9]{10}" required title="Ten digits number">
+        <br> <br>
+        <label for="password">Password:</label>
+        <input type="password" name="" id="password" pattern=".{8,}" title="Eight or more characters">
+        <br> <br>
+        <label for="comments">Comments:</label>
+        <textarea name="" id="comments" cols="30" rows="10"></textarea>
+        <br> <br>
+        <button type="submit">Submit</button>
+    </form>
+
+</body>
+</html>
