@@ -1,0 +1,115 @@
+<!-- 
+1. Create a table with three columns: "City", "Country" and "Population". Add three rows of data to the table.
+2. create a table with caption that lists your favorite foods and their respective categories.
+3. Use colspan and rowspan to create a table layout for a weekly schedule. 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taks 6 - Tables</title>
+</head>
+<body>
+    
+    <h2>Table of Cities</h2>
+    <table border="1">
+        <tr>
+            <th>City</th>
+            <th>Country</th>
+            <th>Population</th>
+        </tr>
+        <tr>
+            <td>Delhi</td>
+            <td>India</td>
+            <td>1.9 Cr</td>
+        </tr>
+        <tr>
+            <td>London</td>
+            <td>UK</td>
+            <td>8.9 Cr</td>
+        </tr>
+        <tr>
+            <td>New York</td>
+            <td>USA</td>
+            <td>8.4 Cr</td>
+        </tr>
+    </table>
+
+    <h2>Table of foods</h2>
+    <table border="1">
+        <caption>My favorite foods</caption>
+        <tr>
+            <th>Food</th>
+            <th>Category</th>
+        </tr>
+        <tr>
+            <td>Idali Sambar</td>
+            <td>Breakfast</td>
+        </tr>
+        <tr>
+            <td>Puri Bhaji</td>
+            <td>Lunch</td>
+        </tr>
+        <tr>
+            <td>Khichadi</td>
+            <td>Dinner</td>
+        </tr>
+    </table>
+
+    <h2>Weekly Schedule</h2>
+    <table border="1">
+        <tr>
+            <th>Day</th>
+            <th>9:00 - 10:00</th>
+            <th>10:00 - 11:00</th>
+            <th>11:00 - 12:00</th>
+            <th>12:00 - 1:00</th>
+            <th>1:00 - 2:00</th>
+            <th>2:00 - 3:00</th>
+            <th>3:00 - 4:00</th>
+        </tr>
+        <tr>
+            <td>Monday</td>
+            <td colspan="2">HTML</td>
+            <td colspan="2">CSS</td>
+            <td colspan="2">JS</td>
+            <td rowspan="3">Read Doc</td>
+        </tr>
+        <tr>
+            <td>Tuesday</td>
+            <td colspan="2">HTML</td>
+            <td colspan="2">CSS</td>
+            <td colspan="2">JS</td>
+        </tr>
+        <tr>
+            <td>Wednesday</td>
+            <td colspan="2">HTML</td>
+            <td colspan="2">CSS</td>
+            <td colspan="2">JS</td>
+        </tr>
+        <tr>
+            <td>Thursday</td>
+            <td colspan="2">HTML</td>
+            <td colspan="2">CSS</td>
+            <td colspan="2">JS</td>
+            <td rowspan="2">Make PRD</td>
+        </tr>
+        <tr>
+            <td>Friday</td>
+            <td colspan="2">HTML</td>
+            <td colspan="2">CSS</td>
+            <td colspan="2">JS</td>
+        </tr>
+        <tr>
+            <td>Sturday</td>
+            <td colspan="4" rowspan="2">Project</td>
+            <td colspan="3" rowspan="2">Watch podcast related to webdev</td>
+        </tr>
+        <tr>
+            <td>Sunday</td>
+        </tr>
+
+</body>
+</html>
