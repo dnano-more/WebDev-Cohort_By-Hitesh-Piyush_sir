@@ -1,0 +1,56 @@
+<!--
+1. Create a simple webpage with the following sections.
+    - Header with a title and a navigation menu.
+    - Main content with a section and an article.
+    - Sidebar using <aside> for related links.
+    - Footer with a copyright information.
+2. Use the area-label attribute to improve the accessibility in your navigation menu.
+3. Create a blog post layout using semantic such as <article>, <header> and <footer>. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 8 - Semantic layout</title>
+</head>
+<body>
+    <header>
+        <h1>My Webpage</h1>
+        <nav>
+            <ul>
+                <li><a href="#" aria-label="Home">Home</a></li>
+                <li><a href="#" aria-label="About">About</a></li>
+                <li><a href="#" aria-label="Contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Section</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
+        </section>
+
+        <article>
+            <header>
+                <h2>Article</h2>
+                <p>Posted on: 24th Jan 2025</p>
+            </header>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
+            <footer>
+                <p>Author: Dnano More</p>
+            </footer>
+        </article>
+
+        <aside>
+            <h2>Related Links</h2>
+            <ul>
+                <li><a href="#">Link 1</a></li>
+                <li><a href="#">Link 2</a></li>
+                <li><a href="#">Link 3</a></li>
+            </ul>
+        </aside>
+    </main>
+</body>
+</html>
