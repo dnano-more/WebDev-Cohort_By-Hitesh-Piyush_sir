@@ -13,57 +13,110 @@ body {
 }
 
 .container {
-  /* Add your styles here */
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-h1 {
-  /* Add your styles here */
+h1 span {
+  font-size: 2.3rem;
+  opacity: .7;
+  /* padding-bottom: 1rem; */
 }
 
 .pricing-heading {
-  /* Add your styles here */
+  margin: 3rem 0;
+  display: flex;
+  justify-items: baseline;
+  justify-content: center;
 }
 
 .pricing-container {
-  /* Add your styles here */
+  min-height: 80vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 3%;
 }
 
 .pricing-card {
-  /* Add your styles here */
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.7em;
+  border-radius: 10px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  height: fit-content;
+  :nth-child(1):not(.popular-badge) { 
+    margin-top: 2em;
+  }
 }
 
 .pricing-card:hover {
-  /* Add your styles here */
+  border: 2px solid #ff8600;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  transition: all 0.1s ease;
 }
 
 .pricing-card.popular {
-  /* Add your styles here */
+  border: 2px solid #ff8600;
+  border-radius: 10px;
 }
 
 .popular-badge {
-  /* Add your styles here */
+  background-color: #ff8600;
+  color: #ffffff;
+  padding: .3rem .4rem;
+  border-radius: 15px;
+  font-size: smaller;
+  margin-top: -16px;
+  z-index: 1;
 }
 
 .price {
-  /* Add your styles here */
+  font-size: 2em;
+  font-weight: 600;
 }
 
 .period {
-  /* Add your styles here */
+  color: #808080;
 }
 
 .features {
-  /* Add your styles here */
+  color: rgb(75, 75, 75);
+  text-indent: -1.35em;
+  line-height: 1.8em;
+  list-style-position: outside;
+  /* list-style-image: url(./assets/image.png); */
 }
 
 .features li {
-  /* Add your styles here */
+  margin: 0 2em;
+  list-style-type: none;
+}
+
+li::before {
+  content: '';
+  display: inline-block;
+  height: 1em;
+  width: 1em;
+  padding-left: 7px;
+  background-image: url(./assets/image.png);
+  background-size:contain; 	
+  background-repeat:no-repeat;
 }
 
 .subscribe-btn {
-  /* Add your styles here */
+  background-color: #f5971d;
+  padding: .7rem 1.5rem;
+  margin-bottom: 2rem;
+  border-radius: 30px;
+  border: none;
+  font-size: medium;
+  transition: all 0.3s ease;
 }
 
 .subscribe-btn:hover {
-  /* Add your styles here */
+  background-color: #ff8903;
+  cursor: pointer;
 }
