@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 body {
@@ -12,65 +13,161 @@ body {
 }
 
 .header {
-  /* Define header styles here */
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 4em;
+  height: 10vh;
 }
 
 .logo {
-  /* Define logo styles here */
+  display: flex;
+  align-items: center;
+  gap: .5em;
+  color: #a24507;
+  font-size: larger;
+  font-weight: 600;
 }
 
 .logo img {
-  /* Define image styles within the logo here */
+  border-radius: 50%;
+  padding: 1px;
+  border: 2px solid #a24507;
 }
 
 .nav-menu a {
-  /* Define navigation link styles here */
+  text-decoration: none;
+  color: #c74f00;
+  cursor: pointer;
+  padding: 0 1em;
+  transition: all 0.3s ease-in-out;
 }
 
 .nav-menu a:hover {
-  /* Define hover styles for navigation links here */
+  color: #652901;
+  transition: all 0.3s ease-in-out;
 }
 
 .hero {
-  /* Define hero section styles here */
+  width: 100vw;
+  height: 50vh
+  }
+
+.hero::before {
+  display: block;
+  content: "";
+  z-index: -1;
+  top: 10vh;
+  left: 0;
+  right: 0;
+  bottom: 30%;
+  position: absolute;
+  background-image: url(./assets/chaipatti.png);
+  background-size: 100vw auto;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.hero::after {
+  display: block;
+  content: "";
+  z-index: 1;
+  top: 10vh;
+  left: 0;
+  right: 0;
+  bottom: 30%;
+  position: absolute;
+  background-color: black;
+  opacity: .45;
+}
+
+.hero-text {
+  z-index: 2;
+  color: #ffffff;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  padding: 3em 0;
+  padding-bottom: 0;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .hero-text h1 {
-  /* Define styles for h1 in hero-text here */
+  font-size: 2.2em;
 }
 
 .hero-text p {
-  /* Define styles for paragraph in hero-text here */
+  font-size: medium;
+  font-weight: 500;
+  padding: .5em 0;
 }
 
 .shop-button {
-  /* Define shop button styles here */
+  display: block;
+  margin: 1em auto;
+  border: none;
+  font-size: medium;
+  padding: 1em 3em;
+  border-radius: 50px;
+  margin-top: .8em;
+  color: #ffffffc7;
+  background-color: #a24507;
+  transition: all 0.3s ease-in-out;
 }
 
 .shop-button:hover {
-  /* Define hover styles for shop button here */
+  cursor: pointer;
+  background-color: #c74f00;
 }
 
 .tea-collection {
-  /* Define tea collection section styles here */
+  position: absolute;
+  top: 68.36vh;
+  width: 100%;
+  text-align: center;
 }
 
 .tea-collection h2 {
-  /* Define styles for h2 in tea collection here */
+  margin: 1.2em auto;
+  color: #a24507;
 }
 
 .tea-cards {
-  /* Define tea cards container styles here */
+  width: 80vw;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+  gap: 1.5em;
 }
 
 .tea-card {
-  /* Define styles for each tea card here */
+  width: 20vw;
+  height: 30vh;
+  padding: 1.5em;
+  background-color: #f5e6dc5e;
+  border-radius: 10px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  cursor: pointer;
+  :hover {
+    transform: scale(1.1);
+    transition: all 0.3s ease-out;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  }
 }
 
 .tea-card h3 {
-  /* Define styles for tea card headings here */
+  color: #a24507;
+  margin-bottom: 1em;
 }
 
 .tea-card p {
-  /* Define styles for tea card paragraph text here */
+  font-size: smaller;
+  font-weight: 500;
+  padding: .5em 1em;
 }
